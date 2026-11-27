@@ -7,6 +7,12 @@ The `two-axis-helicoid-uniqueness/` directory containing this file is the GitHub
 The complete manuscript entry point is [`TwoAxisHelicoidManuscript.lean`](TwoAxisHelicoidManuscript.lean), with **8,419 project modules** and approximately **4.11 GiB** of source code.
 The many `TraceData*.lean` files contain computational certificates checked by the Lean kernel and are part of the proof source.
 
+## Background
+
+Matthias Weber, David Hoffman and Michael Wolf proved embedded existence in *An embedded genus-one helicoid*, *Annals of Mathematics* **169** (2009), 347–448 ([DOI](https://doi.org/10.4007/annals.2009.169.347), [publisher PDF](https://annals.math.princeton.edu/wp-content/uploads/annals-v169-n2-p01.pdf)). Their Theorem 1 and Conjecture 1 on p. 351 give the existence result and state the corresponding embedded uniqueness conjecture; their definition (1) on p. 350 includes a vertical axis and a horizontal straight line.
+
+This project addresses that uniqueness problem with both axes retained and with the explicit single-sheeted C¹ helicoidal graph-end condition in Section 1 of the accompanying paper. See [Entry points and theorem scope](#entry-points-and-theorem-scope) for the precise formal hypotheses.
+
 ## Paper
 
 *Uniqueness of the two-axis genus-one helicoid*

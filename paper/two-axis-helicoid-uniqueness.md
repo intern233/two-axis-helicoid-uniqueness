@@ -6,7 +6,7 @@ abstract: |
 
 # Introduction and the main statement
 
-A genus-one helicoid combines the topology of a punctured torus with the geometry of a helicoidal end. The embedded example constructed by Weber, Hoffman and Wolf [WHW09] has a vertical straight axis and a horizontal straight line. Their existence theorem raises the corresponding uniqueness question. The present paper treats this class with both straight axes retained as hypotheses.
+A genus-one helicoid combines the topology of a punctured torus with the geometry of a helicoidal end. Weber, Hoffman and Wolf [WHW09, Theorem 1] proved the existence of an embedded genus-one helicoid in their 2009 paper in *Annals of Mathematics*. In the same paper, they formulated the corresponding embedded uniqueness conjecture [WHW09, Conjecture 1, p. 351]. Their definition [WHW09, (1), p. 350] includes a vertical straight axis and a horizontal straight line. We address this uniqueness problem with both axes retained and with the explicit $C^1$ helicoidal graph-end condition specified below.
 
 Two nearby results require a distinction of scope. Alarcón, Ferrer and Martín [AFM07] prove uniqueness for a singly periodic genus-one helicoid under a symmetry hypothesis. The genus in that result belongs to a periodic quotient. Bernstein and Breiner [BB11b] prove a half-turn symmetry about a normal line for an arbitrary embedded genus-one helicoid. Such a normal symmetry does not supply the two straight lines contained in the surface that are assumed here. The broader uniqueness problem for finite-genus, one-ended embedded minimal surfaces is discussed in Pérez's 2026 survey [P26, §7]. We make no classification assertion after removing the two-axis hypothesis.
 

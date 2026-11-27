@@ -7,6 +7,12 @@
 整稿入口为 [`TwoAxisHelicoidManuscript.lean`](TwoAxisHelicoidManuscript.lean)，包含其完整的 **8,419 个项目模块**，约 **4.11 GiB** 源码。
 其中大量 `TraceData*.lean` 文件是由 Lean 内核检查的计算证书，属于证明源码。
 
+## 问题背景
+
+Matthias Weber、David Hoffman 和 Michael Wolf 在 *An embedded genus-one helicoid*（*Annals of Mathematics* **169** (2009), 347–448）中证明了嵌入亏格一螺旋面的存在性（[DOI](https://doi.org/10.4007/annals.2009.169.347)、[期刊原文 PDF](https://annals.math.princeton.edu/wp-content/uploads/annals-v169-n2-p01.pdf)）。原文第 351 页的 Theorem 1 给出存在性结果，紧接着的 Conjecture 1 提出对应的嵌入情形唯一性猜想；第 350 页的定义 (1) 包含竖直轴和水平直线。
+
+本项目研究这一唯一性问题，保留双轴条件，并采用配套论文 §1 明确规定的单层 C¹ 螺旋法向图端条件。准确的形式化假设见[主要入口与命题范围](#主要入口与命题范围)。
+
 ## 论文
 
 *Uniqueness of the two-axis genus-one helicoid*
