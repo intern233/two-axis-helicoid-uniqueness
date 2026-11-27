@@ -1,0 +1,78 @@
+import TwoAxisHelicoid
+import TwoAxisHelicoid.AppendixPeriodAndRemainder
+import TwoAxisHelicoid.BobenkoAdmissibleNormalizer
+import TwoAxisHelicoid.BobenkoSpinCharacters
+import TwoAxisHelicoid.EllipticFPositiveSeriesDerivative
+import TwoAxisHelicoid.EllipticOriginLaurentCoefficients
+import TwoAxisHelicoid.EndCorrectionAllDerivatives
+import TwoAxisHelicoid.HalfPeriodFilteredDivisorCoefficient
+import TwoAxisHelicoid.HalfPeriodUniformDerivatives
+import TwoAxisHelicoid.LeftChordWeightedPeriodBound
+import TwoAxisHelicoid.LeftHalfChordManuscriptAsymptotic
+import TwoAxisHelicoid.LeftManuscriptThetaAndCotangent
+import TwoAxisHelicoid.LeftProductLiteralError
+import TwoAxisHelicoid.ManuscriptFEndpointEnclosures
+import TwoAxisHelicoid.ManuscriptFixedAxesAndGaussOrientation
+import TwoAxisHelicoid.ManuscriptGaussHeightMetric
+import TwoAxisHelicoid.ManuscriptGeometricTheoremOneOne
+import TwoAxisHelicoid.ManuscriptLeftBalanceAndRemainder
+import TwoAxisHelicoid.ManuscriptMarkedSphereDivisor
+import TwoAxisHelicoid.ManuscriptSameCapQuotientFibers
+import TwoAxisHelicoid.ManuscriptSmoothCutoffCompactness
+import TwoAxisHelicoid.ManuscriptTheoremOneOne
+import TwoAxisHelicoid.NormalGraphAngleInequality
+import TwoAxisHelicoid.OriginalFixedAxesVariationParity
+import TwoAxisHelicoid.OriginalMinimalVariationJacobi
+import TwoAxisHelicoid.OriginalPeriodFiveRegions
+import TwoAxisHelicoid.OriginalSlopingLogarithmicPeriod
+import TwoAxisHelicoid.OriginalSlopingSecondVariation
+import TwoAxisHelicoid.PartitionedNormalAreaVariation
+import TwoAxisHelicoid.PdfCentralAttachmentUniquePeriods
+import TwoAxisHelicoid.PdfOriginalManuscriptClassification
+import TwoAxisHelicoid.PdfOriginalRectanglePeriods
+import TwoAxisHelicoid.PdfOriginalSigmaSignMargins
+import TwoAxisHelicoid.PdfOriginalTablesSpatialConclusion
+import TwoAxisHelicoid.PdfRightAttachmentNoClosedPeriods
+import TwoAxisHelicoid.PositionalDoublePoleEndGraph
+import TwoAxisHelicoid.PrintedLeftErrorRational
+import TwoAxisHelicoid.RhombicWeierstrassCosineSeries
+import TwoAxisHelicoid.ManuscriptSigmaZetaNormalizations
+import TwoAxisHelicoid.SlopingMarginPrintedThresholds
+import TwoAxisHelicoid.SlopingWeierstrassMoments
+import TwoAxisHelicoid.SmallRhoManuscriptMomentBounds
+import TwoAxisHelicoid.SmoothHandleHeightEndEvenSpin
+import TwoAxisHelicoid.UnmarkedHeightEndDifferential
+import TwoAxisHelicoid.UnreducedWeierstrassHeat
+import TwoAxisHelicoid.UnreducedHeatOriginConstant
+import TwoAxisHelicoid.VerticalHalfPeriodQuartic
+import TwoAxisHelicoid.VerticalAttachmentFourier
+import TwoAxisHelicoid.VerticalAttachmentLambertSlope
+import TwoAxisHelicoid.VerticalAttachmentVerified
+import TwoAxisHelicoid.VerticalRunDisplayedEndpoints
+import TwoAxisHelicoid.VerticalRunPrintedSlope
+import TwoAxisHelicoid.ZetaAxisDerivativeAndEndpointError
+
+
+/-!
+The full source-level manuscript target includes the original certificate
+root, the geometric conclusion in the physical frame, and the proof owners
+used in the numbered statements, equations, derivations and unnumbered
+displays of the supplied paper.
+-/
+
+/-- Section 9.1 on the original sigma path, using its exact rational margins
+on the closed parameter intervals. -/
+theorem TwoAxisHelicoid.PdfVertical.manuscript_original_sigma_period_strict_bounds :
+    (∀ t ∈ Set.Icc (1/8 : ℝ) (17/20), 3/10000 < TwoAxisHelicoid.originalPeriodAlong t) ∧
+      ∀ t ∈ Set.Icc (9/10 : ℝ) (7/5), TwoAxisHelicoid.originalPeriodAlong t < -(1/25 : ℝ) :=
+  TwoAxisHelicoid.SlopingMarginKernel.strictBoundsOfExactMargins TwoAxisHelicoid.originalPeriodAlong
+    TwoAxisHelicoid.PdfVertical.original_attachment_sigma_sign_margins
+
+#check TwoAxisHelicoid.manuscript_theorem_one_one
+#check TwoAxisHelicoid.placed_manuscript_theorem_one_one
+#check TwoAxisHelicoid.manuscript_geometric_theorem_one_one
+#check TwoAxisHelicoid.PdfVertical.original_tables_classify_manuscript_C1_surfaces
+#check TwoAxisHelicoid.OriginalSmoothHelicoid.minimal_family_velocity_jacobi
+#print axioms TwoAxisHelicoid.manuscript_theorem_one_one
+#print axioms TwoAxisHelicoid.placed_manuscript_theorem_one_one
+#print axioms TwoAxisHelicoid.PdfVertical.manuscript_original_sigma_period_strict_bounds

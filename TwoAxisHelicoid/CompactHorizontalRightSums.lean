@@ -1,0 +1,31 @@
+import TwoAxisHelicoid.CompactHorizontalRightG0
+import TwoAxisHelicoid.CompactHorizontalRightG1
+import TwoAxisHelicoid.CompactHorizontalRightG2
+import TwoAxisHelicoid.CompactHorizontalRightG3
+import TwoAxisHelicoid.CompactHorizontalRightG4
+import TwoAxisHelicoid.CompactHorizontalRightG5
+import TwoAxisHelicoid.CompactHorizontalRightG6
+import TwoAxisHelicoid.CompactHorizontalRightG7
+
+namespace TwoAxisHelicoid
+open Set
+set_option maxRecDepth 100000
+set_option maxHeartbeats 0
+
+theorem compactHorizontalRightSum0_8 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((10531272400837896465947035617457550513885/340282366920938463463374607431768211456):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 8-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 8-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0≤(((10531272400837896465947382959354334888077/340282366920938463463374607431768211456):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightG0_bounds al au) (compactHorizontalRightG1_bounds al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum8_16 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((888536056827376683867608887638770507855/85070591730234615865843651857942052864):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 8 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 8≤(((111067007103422085483462041321958396225/10633823966279326983230456482242756608):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightG2_bounds al au) (compactHorizontalRightG3_bounds al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum16_24 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((-5526464424216734399304510605875332355801/170141183460469231731687303715884105728):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 24-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 24-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16≤(((-5526464424216734399304136603443436106243/170141183460469231731687303715884105728):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightG4_bounds al au) (compactHorizontalRightG5_bounds al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum24_32 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((-1516243889876958915645323224404364036555/170141183460469231731687303715884105728):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 24 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 24≤(((-1516243889876958915644652868233439188431/170141183460469231731687303715884105728):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightG6_bounds al au) (compactHorizontalRightG7_bounds al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum0_16 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((14085416628147403201417471168012632545305/340282366920938463463374607431768211456):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0≤(((14085416628147403201418168281657003567277/340282366920938463463374607431768211456):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightSum0_8 al au) (compactHorizontalRightSum8_16 al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum16_32 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((-1760677078523423328737458457569924098089/42535295865117307932921825928971026432):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 16≤(((-3521354157046846657474394735838437647337/85070591730234615865843651857942052864):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightSum16_24 al au) (compactHorizontalRightSum24_32 al au) (by decide +kernel) (by decide +kernel)
+theorem compactHorizontalRightSum0_32 {a : ℝ} (al : ((4409686737855254420087965714223/7427640235712281649394745344000):ℝ)≤a) (au : a≤((4409686737855254420087965726223/7427640235712281649394745344000):ℝ)) : (((-39983428482196492546760239407/340282366920938463463374607431768211456):ℚ):ℝ)≤horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0 ∧ horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 32-horizontalSamplePrefix (((173245538877/200000000000):ℚ):ℝ) a 32 0≤(((-39983428479410661696747022071/340282366920938463463374607431768211456):ℚ):ℝ) :=
+  horizontalSamplePrefix_add_bounds (compactHorizontalRightSum0_16 al au) (compactHorizontalRightSum16_32 al au) (by decide +kernel) (by decide +kernel)
+
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.compactHorizontalRightSum0_32

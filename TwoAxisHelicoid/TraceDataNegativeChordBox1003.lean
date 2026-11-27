@@ -1,0 +1,4 @@
+import TwoAxisHelicoid.TraceDataNegativeChordBox1003Group000
+import TwoAxisHelicoid.TraceDataNegativeChordBox1003Group001
+import TwoAxisHelicoid.TraceDataNegativeChordBox1003Group002
+import TwoAxisHelicoid.TraceDataNegativeChordBox1003Group003

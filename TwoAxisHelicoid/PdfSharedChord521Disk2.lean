@@ -1,0 +1,48 @@
+import TwoAxisHelicoid.PdfSharedChord521Parameters
+import TwoAxisHelicoid.JacobiRangeComposite
+
+namespace TwoAxisHelicoid.PdfVertical
+set_option maxHeartbeats 0
+set_option maxRecDepth 100000
+
+theorem sharedChord521Disk2Cell0_0 : chordRectangleTest 4 sharedChord521Params (-7/8) (-3/4) (-1/4) (-1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell0_1 : chordRectangleTest 4 sharedChord521Params (-7/8) (-3/4) (-1/8) 0 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell0_2 : chordRectangleTest 4 sharedChord521Params (-7/8) (-3/4) 0 (1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell0_3 : chordRectangleTest 4 sharedChord521Params (-7/8) (-3/4) (1/8) (1/4) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell1_0 : chordRectangleTest 4 sharedChord521Params (-3/4) (-5/8) (-1/4) (-1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell1_1 : chordRectangleTest 4 sharedChord521Params (-3/4) (-5/8) (-1/8) 0 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell1_2 : chordRectangleTest 4 sharedChord521Params (-3/4) (-5/8) 0 (1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell1_3 : chordRectangleTest 4 sharedChord521Params (-3/4) (-5/8) (1/8) (1/4) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell2_0 : chordRectangleTest 4 sharedChord521Params (-5/8) (-1/2) (-1/4) (-1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell2_1 : chordRectangleTest 4 sharedChord521Params (-5/8) (-1/2) (-1/8) 0 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell2_2 : chordRectangleTest 4 sharedChord521Params (-5/8) (-1/2) 0 (1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell2_3 : chordRectangleTest 4 sharedChord521Params (-5/8) (-1/2) (1/8) (1/4) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell3_0 : chordRectangleTest 4 sharedChord521Params (-1/2) (-3/8) (-1/4) (-1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell3_1 : chordRectangleTest 4 sharedChord521Params (-1/2) (-3/8) (-1/8) 0 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell3_2 : chordRectangleTest 4 sharedChord521Params (-1/2) (-3/8) 0 (1/8) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2Cell3_3 : chordRectangleTest 4 sharedChord521Params (-1/2) (-3/8) (1/8) (1/4) 7213645=true := by decide +kernel
+theorem sharedChord521Disk2 {t a : ℝ} (ps : sharedChord521Params.Sound t a) (ht : 0<t) :
+    ChordDiskBound (jacobiCellCenter sharedChord521Bd (2:Fin 9)) (2*jacobiCellRadius sharedChord521Bd (2:Fin 9)) (sharedChord521M 2) t a := by
+  rw [show jacobiCellCenter sharedChord521Bd (2:Fin 9)=(-5/8) by decide +kernel, show 2*jacobiCellRadius sharedChord521Bd (2:Fin 9)=(1/4) by decide +kernel, show sharedChord521M 2=7213645 by decide +kernel]
+  apply chordDiskBound_of_square
+  rw [show ((-5/8):ℚ)-(1/4)=(-7/8) by decide +kernel, show ((-5/8):ℚ)+(1/4)=(-3/8) by decide +kernel, show -((1/4):ℚ)=(-1/4) by decide +kernel]
+  have piece0_0 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell0_0
+  have piece0_1 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell0_1
+  have piece0_2 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell0_2
+  have piece0_3 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell0_3
+  have piece1_0 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell1_0
+  have piece1_1 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell1_1
+  have piece1_2 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell1_2
+  have piece1_3 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell1_3
+  have piece2_0 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell2_0
+  have piece2_1 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell2_1
+  have piece2_2 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell2_2
+  have piece2_3 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell2_3
+  have piece3_0 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell3_0
+  have piece3_1 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell3_1
+  have piece3_2 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell3_2
+  have piece3_3 := chordRectangleTest_sound ps ht sharedChord521Disk2Cell3_3
+  exact (ChordRectangleBound.joinX (ChordRectangleBound.joinX (ChordRectangleBound.joinY (ChordRectangleBound.joinY piece0_0 piece0_1) (ChordRectangleBound.joinY piece0_2 piece0_3)) (ChordRectangleBound.joinY (ChordRectangleBound.joinY piece1_0 piece1_1) (ChordRectangleBound.joinY piece1_2 piece1_3))) (ChordRectangleBound.joinX (ChordRectangleBound.joinY (ChordRectangleBound.joinY piece2_0 piece2_1) (ChordRectangleBound.joinY piece2_2 piece2_3)) (ChordRectangleBound.joinY (ChordRectangleBound.joinY piece3_0 piece3_1) (ChordRectangleBound.joinY piece3_2 piece3_3))))
+
+end TwoAxisHelicoid.PdfVertical
+#print axioms TwoAxisHelicoid.PdfVertical.sharedChord521Disk2

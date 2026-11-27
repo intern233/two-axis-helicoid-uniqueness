@@ -1,0 +1,12 @@
+import TwoAxisHelicoid.RectangleShapeLeftGroup000
+import TwoAxisHelicoid.RectangleShapeLeftGroup001
+import TwoAxisHelicoid.RectangleShapeLeftGroup002
+import TwoAxisHelicoid.RectangleShapeLeftGroup003
+import TwoAxisHelicoid.RectangleShapeLeftGroup004
+import TwoAxisHelicoid.RectangleShapeLeftGroup005
+import TwoAxisHelicoid.RectangleShapeLeftGroup006
+namespace TwoAxisHelicoid
+theorem rectangleShapeLeftCover : CheckedRectangleShape true (1/8) (3/8) :=
+  (.join (.join checkedRectangleShapeLeftGroup000 (.join checkedRectangleShapeLeftGroup001 checkedRectangleShapeLeftGroup002)) (.join (.join checkedRectangleShapeLeftGroup003 checkedRectangleShapeLeftGroup004) (.join checkedRectangleShapeLeftGroup005 checkedRectangleShapeLeftGroup006)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.rectangleShapeLeftCover

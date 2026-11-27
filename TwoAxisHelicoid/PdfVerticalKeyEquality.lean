@@ -1,0 +1,6 @@
+import TwoAxisHelicoid.PdfVerticalRowSound
+
+namespace TwoAxisHelicoid
+deriving instance DecidableEq for CertificateData.Interval
+deriving instance DecidableEq for PdfVertical.VerticalKey
+end TwoAxisHelicoid

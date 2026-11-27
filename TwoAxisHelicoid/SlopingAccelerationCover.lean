@@ -1,0 +1,10 @@
+import TwoAxisHelicoid.SlopingAccelerationGroup00
+import TwoAxisHelicoid.SlopingAccelerationGroup01
+import TwoAxisHelicoid.SlopingAccelerationGroup02
+import TwoAxisHelicoid.SlopingAccelerationGroup03
+
+namespace TwoAxisHelicoid
+theorem sloping_axis_positive_acceleration_cover : CheckedSlopingPositiveAcceleration (-3/16) (3/16) :=
+  (.join (.join checkedSlopingAccelerationGroup00 checkedSlopingAccelerationGroup01) (.join checkedSlopingAccelerationGroup02 checkedSlopingAccelerationGroup03))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.sloping_axis_positive_acceleration_cover

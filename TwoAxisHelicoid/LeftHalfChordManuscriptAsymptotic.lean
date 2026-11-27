@@ -1,0 +1,6 @@
+import TwoAxisHelicoid.VerticalJacobiQuadraticResidual
+import TwoAxisHelicoid.LeftNegativeHalfChordLimit
+
+#print axioms TwoAxisHelicoid.left_actual_root_quadratic_residual_bound
+#print axioms TwoAxisHelicoid.left_actual_root_quadratic_residual_isBigO
+#print axioms TwoAxisHelicoid.left_negative_half_chord_ratio_tendsto_one

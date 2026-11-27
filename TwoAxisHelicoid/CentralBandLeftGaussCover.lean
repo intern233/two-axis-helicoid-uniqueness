@@ -1,0 +1,39 @@
+import TwoAxisHelicoid.CentralBandLeftGaussGroup000
+import TwoAxisHelicoid.CentralBandLeftGaussGroup001
+import TwoAxisHelicoid.CentralBandLeftGaussGroup002
+import TwoAxisHelicoid.CentralBandLeftGaussGroup003
+import TwoAxisHelicoid.CentralBandLeftGaussGroup004
+import TwoAxisHelicoid.CentralBandLeftGaussGroup005
+import TwoAxisHelicoid.CentralBandLeftGaussGroup006
+import TwoAxisHelicoid.CentralBandLeftGaussGroup007
+import TwoAxisHelicoid.CentralBandLeftGaussGroup008
+import TwoAxisHelicoid.CentralBandLeftGaussGroup009
+import TwoAxisHelicoid.CentralBandLeftGaussGroup010
+import TwoAxisHelicoid.CentralBandLeftGaussGroup011
+import TwoAxisHelicoid.CentralBandLeftGaussGroup012
+import TwoAxisHelicoid.CentralBandLeftGaussGroup013
+import TwoAxisHelicoid.CentralBandLeftGaussGroup014
+import TwoAxisHelicoid.CentralBandLeftGaussGroup015
+import TwoAxisHelicoid.CentralBandLeftGaussGroup016
+import TwoAxisHelicoid.CentralBandLeftGaussGroup017
+import TwoAxisHelicoid.CentralBandLeftGaussGroup018
+import TwoAxisHelicoid.CentralBandLeftGaussGroup019
+import TwoAxisHelicoid.CentralBandLeftGaussGroup020
+import TwoAxisHelicoid.CentralBandLeftGaussGroup021
+import TwoAxisHelicoid.CentralBandLeftGaussGroup022
+import TwoAxisHelicoid.CentralBandLeftGaussGroup023
+import TwoAxisHelicoid.CentralBandLeftGaussGroup024
+import TwoAxisHelicoid.CentralBandLeftGaussGroup025
+import TwoAxisHelicoid.CentralBandLeftGaussGroup026
+import TwoAxisHelicoid.CentralBandLeftGaussGroup027
+import TwoAxisHelicoid.CentralBandLeftGaussGroup028
+
+namespace TwoAxisHelicoid
+set_option Elab.async false
+set_option maxRecDepth 12000
+set_option maxHeartbeats 4000000
+
+theorem centralBandLeftGaussCover : CheckedCentralBandEdge .gauss true (1/2) (1/8) (3/8) :=
+  (.join (.join (.join (.join checkedCentralBandLeftGaussGroup000 (.join checkedCentralBandLeftGaussGroup001 checkedCentralBandLeftGaussGroup002)) (.join (.join checkedCentralBandLeftGaussGroup003 checkedCentralBandLeftGaussGroup004) (.join checkedCentralBandLeftGaussGroup005 checkedCentralBandLeftGaussGroup006))) (.join (.join checkedCentralBandLeftGaussGroup007 (.join checkedCentralBandLeftGaussGroup008 checkedCentralBandLeftGaussGroup009)) (.join (.join checkedCentralBandLeftGaussGroup010 checkedCentralBandLeftGaussGroup011) (.join checkedCentralBandLeftGaussGroup012 checkedCentralBandLeftGaussGroup013)))) (.join (.join (.join checkedCentralBandLeftGaussGroup014 (.join checkedCentralBandLeftGaussGroup015 checkedCentralBandLeftGaussGroup016)) (.join (.join checkedCentralBandLeftGaussGroup017 checkedCentralBandLeftGaussGroup018) (.join checkedCentralBandLeftGaussGroup019 checkedCentralBandLeftGaussGroup020))) (.join (.join (.join checkedCentralBandLeftGaussGroup021 checkedCentralBandLeftGaussGroup022) (.join checkedCentralBandLeftGaussGroup023 checkedCentralBandLeftGaussGroup024)) (.join (.join checkedCentralBandLeftGaussGroup025 checkedCentralBandLeftGaussGroup026) (.join checkedCentralBandLeftGaussGroup027 checkedCentralBandLeftGaussGroup028)))))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.centralBandLeftGaussCover

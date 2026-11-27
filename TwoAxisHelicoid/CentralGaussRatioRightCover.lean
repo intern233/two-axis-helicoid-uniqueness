@@ -1,0 +1,12 @@
+import TwoAxisHelicoid.CentralGaussRatioRightGroup000
+import TwoAxisHelicoid.CentralGaussRatioRightGroup001
+import TwoAxisHelicoid.CentralGaussRatioRightGroup002
+import TwoAxisHelicoid.CentralGaussRatioRightGroup003
+import TwoAxisHelicoid.CentralGaussRatioRightGroup004
+import TwoAxisHelicoid.CentralGaussRatioRightGroup005
+import TwoAxisHelicoid.CentralGaussRatioRightGroup006
+namespace TwoAxisHelicoid
+theorem centralGaussRatioRightCover : CheckedCentralRatioJets false true (3/5) (0/1) (7/16) :=
+  (.join (.join checkedCentralGaussRatioRightGroup000 (.join checkedCentralGaussRatioRightGroup001 checkedCentralGaussRatioRightGroup002)) (.join (.join checkedCentralGaussRatioRightGroup003 checkedCentralGaussRatioRightGroup004) (.join checkedCentralGaussRatioRightGroup005 checkedCentralGaussRatioRightGroup006)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.centralGaussRatioRightCover

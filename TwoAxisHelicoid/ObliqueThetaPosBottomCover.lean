@@ -1,0 +1,12 @@
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup000
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup001
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup002
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup003
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup004
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup005
+import TwoAxisHelicoid.ObliqueThetaPosBottomGroup006
+namespace TwoAxisHelicoid
+theorem obliqueThetaPosBottomCover : CheckedObliqueEdge true false false (23/256) (1/2) (1/1) :=
+  (.join (.join checkedObliqueThetaPosBottomGroup000 (.join checkedObliqueThetaPosBottomGroup001 checkedObliqueThetaPosBottomGroup002)) (.join (.join checkedObliqueThetaPosBottomGroup003 checkedObliqueThetaPosBottomGroup004) (.join checkedObliqueThetaPosBottomGroup005 checkedObliqueThetaPosBottomGroup006)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.obliqueThetaPosBottomCover

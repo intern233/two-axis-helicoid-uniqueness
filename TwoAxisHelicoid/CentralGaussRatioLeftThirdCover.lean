@@ -1,0 +1,13 @@
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup000
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup001
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup002
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup003
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup004
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup005
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup006
+import TwoAxisHelicoid.CentralGaussRatioLeftThirdGroup007
+namespace TwoAxisHelicoid
+theorem centralGaussRatioLeftThirdCover : CheckedCentralRatioJets true true (1/2) (0/1) (7/16) :=
+  (.join (.join (.join checkedCentralGaussRatioLeftThirdGroup000 checkedCentralGaussRatioLeftThirdGroup001) (.join checkedCentralGaussRatioLeftThirdGroup002 checkedCentralGaussRatioLeftThirdGroup003)) (.join (.join checkedCentralGaussRatioLeftThirdGroup004 checkedCentralGaussRatioLeftThirdGroup005) (.join checkedCentralGaussRatioLeftThirdGroup006 checkedCentralGaussRatioLeftThirdGroup007)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.centralGaussRatioLeftThirdCover

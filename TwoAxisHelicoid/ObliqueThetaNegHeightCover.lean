@@ -1,0 +1,23 @@
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup000
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup001
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup002
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup003
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup004
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup005
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup006
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup007
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup008
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup009
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup010
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup011
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup012
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup013
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup014
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup015
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup016
+import TwoAxisHelicoid.ObliqueThetaNegHeightGroup017
+namespace TwoAxisHelicoid
+theorem obliqueThetaNegHeightCover : CheckedObliqueEdge false true true (125/256) (0/1) (7/16) :=
+  (.join (.join (.join (.join checkedObliqueThetaNegHeightGroup000 checkedObliqueThetaNegHeightGroup001) (.join checkedObliqueThetaNegHeightGroup002 checkedObliqueThetaNegHeightGroup003)) (.join (.join checkedObliqueThetaNegHeightGroup004 checkedObliqueThetaNegHeightGroup005) (.join checkedObliqueThetaNegHeightGroup006 (.join checkedObliqueThetaNegHeightGroup007 checkedObliqueThetaNegHeightGroup008)))) (.join (.join (.join checkedObliqueThetaNegHeightGroup009 checkedObliqueThetaNegHeightGroup010) (.join checkedObliqueThetaNegHeightGroup011 checkedObliqueThetaNegHeightGroup012)) (.join (.join checkedObliqueThetaNegHeightGroup013 checkedObliqueThetaNegHeightGroup014) (.join checkedObliqueThetaNegHeightGroup015 (.join checkedObliqueThetaNegHeightGroup016 checkedObliqueThetaNegHeightGroup017)))))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.obliqueThetaNegHeightCover

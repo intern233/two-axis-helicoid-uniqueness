@@ -1,0 +1,13 @@
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup000
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup001
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup002
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup003
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup004
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup005
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup006
+import TwoAxisHelicoid.ObliqueThetaNegRightGroup007
+namespace TwoAxisHelicoid
+theorem obliqueThetaNegRightCover : CheckedObliqueEdge false false true (125/256) (0/1) (7/16) :=
+  (.join (.join (.join checkedObliqueThetaNegRightGroup000 checkedObliqueThetaNegRightGroup001) (.join checkedObliqueThetaNegRightGroup002 checkedObliqueThetaNegRightGroup003)) (.join (.join checkedObliqueThetaNegRightGroup004 checkedObliqueThetaNegRightGroup005) (.join checkedObliqueThetaNegRightGroup006 checkedObliqueThetaNegRightGroup007)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.obliqueThetaNegRightCover

@@ -1,0 +1,18 @@
+import TwoAxisHelicoid.CentralBandBottomGaussGroup000
+import TwoAxisHelicoid.CentralBandBottomGaussGroup001
+import TwoAxisHelicoid.CentralBandBottomGaussGroup002
+import TwoAxisHelicoid.CentralBandBottomGaussGroup003
+import TwoAxisHelicoid.CentralBandBottomGaussGroup004
+import TwoAxisHelicoid.CentralBandBottomGaussGroup005
+import TwoAxisHelicoid.CentralBandBottomGaussGroup006
+import TwoAxisHelicoid.CentralBandBottomGaussGroup007
+
+namespace TwoAxisHelicoid
+set_option Elab.async false
+set_option maxRecDepth 12000
+set_option maxHeartbeats 4000000
+
+theorem centralBandBottomGaussCover : CheckedCentralBandEdge .gauss false (1/8) (1/2) (5/8) :=
+  (.join (.join (.join checkedCentralBandBottomGaussGroup000 checkedCentralBandBottomGaussGroup001) (.join checkedCentralBandBottomGaussGroup002 checkedCentralBandBottomGaussGroup003)) (.join (.join checkedCentralBandBottomGaussGroup004 checkedCentralBandBottomGaussGroup005) (.join checkedCentralBandBottomGaussGroup006 checkedCentralBandBottomGaussGroup007)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.centralBandBottomGaussCover

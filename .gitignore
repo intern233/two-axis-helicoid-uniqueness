@@ -1,0 +1,34 @@
+# Lake dependencies, compiled libraries, native code and caches
+/.lake/
+/build/
+/dist/
+*.olean
+*.olean.*
+*.ilean
+*.ilean.*
+*.ir
+*.ir.*
+*.trace
+*.trace.*
+*.hash
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.c
+
+# Local verification output and editor state
+*.log
+*.tmp
+*.bak
+*~
+/.vscode/
+/.idea/
+.DS_Store
+Thumbs.db
+__pycache__/
+*.py[cod]
+/.venv/
+.env
+.env.*

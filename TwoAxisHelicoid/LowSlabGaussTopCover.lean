@@ -1,0 +1,25 @@
+import TwoAxisHelicoid.LowSlabGaussTopGroup000
+import TwoAxisHelicoid.LowSlabGaussTopGroup001
+import TwoAxisHelicoid.LowSlabGaussTopGroup002
+import TwoAxisHelicoid.LowSlabGaussTopGroup003
+import TwoAxisHelicoid.LowSlabGaussTopGroup004
+import TwoAxisHelicoid.LowSlabGaussTopGroup005
+import TwoAxisHelicoid.LowSlabGaussTopGroup006
+import TwoAxisHelicoid.LowSlabGaussTopGroup007
+import TwoAxisHelicoid.LowSlabGaussTopGroup008
+import TwoAxisHelicoid.LowSlabGaussTopGroup009
+import TwoAxisHelicoid.LowSlabGaussTopGroup010
+import TwoAxisHelicoid.LowSlabGaussTopGroup011
+import TwoAxisHelicoid.LowSlabGaussTopGroup012
+import TwoAxisHelicoid.LowSlabGaussTopGroup013
+import TwoAxisHelicoid.LowSlabGaussTopGroup014
+import TwoAxisHelicoid.LowSlabGaussTopGroup015
+import TwoAxisHelicoid.LowSlabGaussTopGroup016
+import TwoAxisHelicoid.LowSlabGaussTopGroup017
+import TwoAxisHelicoid.LowSlabGaussTopGroup018
+import TwoAxisHelicoid.LowSlabGaussTopGroup019
+namespace TwoAxisHelicoid
+theorem lowSlabGaussTopCover : CheckedLowSlabGaussTop (1/2) (1/1) :=
+  (.join (.join (.join (.join checkedLowSlabGaussTopGroup000 checkedLowSlabGaussTopGroup001) (.join checkedLowSlabGaussTopGroup002 (.join checkedLowSlabGaussTopGroup003 checkedLowSlabGaussTopGroup004))) (.join (.join checkedLowSlabGaussTopGroup005 checkedLowSlabGaussTopGroup006) (.join checkedLowSlabGaussTopGroup007 (.join checkedLowSlabGaussTopGroup008 checkedLowSlabGaussTopGroup009)))) (.join (.join (.join checkedLowSlabGaussTopGroup010 checkedLowSlabGaussTopGroup011) (.join checkedLowSlabGaussTopGroup012 (.join checkedLowSlabGaussTopGroup013 checkedLowSlabGaussTopGroup014))) (.join (.join checkedLowSlabGaussTopGroup015 checkedLowSlabGaussTopGroup016) (.join checkedLowSlabGaussTopGroup017 (.join checkedLowSlabGaussTopGroup018 checkedLowSlabGaussTopGroup019)))))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.lowSlabGaussTopCover

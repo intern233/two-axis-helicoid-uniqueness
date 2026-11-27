@@ -1,0 +1,10 @@
+import TwoAxisHelicoid.CentralArcSaddleSlopeGroup000
+import TwoAxisHelicoid.CentralArcSaddleSlopeGroup001
+import TwoAxisHelicoid.CentralArcSaddleSlopeGroup002
+import TwoAxisHelicoid.CentralArcSaddleSlopeGroup003
+import TwoAxisHelicoid.CentralArcSaddleSlopeGroup004
+namespace TwoAxisHelicoid
+theorem centralArcSaddleSlopeCover : CheckedCentralHeightSweep .saddleSlope (1/8) (7/16) :=
+  (.join (.join checkedCentralArcSaddleSlopeGroup000 checkedCentralArcSaddleSlopeGroup001) (.join checkedCentralArcSaddleSlopeGroup002 (.join checkedCentralArcSaddleSlopeGroup003 checkedCentralArcSaddleSlopeGroup004)))
+end TwoAxisHelicoid
+#print axioms TwoAxisHelicoid.centralArcSaddleSlopeCover
